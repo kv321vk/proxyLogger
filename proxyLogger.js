@@ -10,3 +10,11 @@ export const logConfigerIgnore = (ignoreArr) => {
     }
   })
 }
+
+// 用法
+// logConfigerIgnore 方法接受一个array 其中是你不想打印出的logger level 的 key方法
+
+// demo
+import { logConfigerIgnore } from './plugins/logConfiger'
+logConfigerIgnore(['error','warn'])
+
